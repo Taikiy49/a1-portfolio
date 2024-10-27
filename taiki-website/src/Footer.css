@@ -1,0 +1,22 @@
+.footer-container {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
+  
+  .footer-container p {
+    margin: 5px 0;
+    color: white;
+  }
+  
+  .footer-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer-container a:hover {
+    text-decoration: underline;
+  }
+  

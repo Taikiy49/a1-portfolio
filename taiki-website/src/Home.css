@@ -1,22 +1,168 @@
-.home-intro-container{
+/* General container for the entire page */
+.home-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20vh;
-    gap: 5vw;
-    border: 1px solid white;
-    
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+    padding-bottom: 5vh;
+    margin-top: 10vh;
 }
-.home-taiki-image{
+
+/* Styling for intro container */
+.home-intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.home-taiki-image {
+    margin: auto;
     width: 20vw;
-    margin-top: auto; margin-bottom: auto;
+    height: 40vh;
     border-radius: 100%;
+
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
 }
 
-.home-intro-text{
-    font-size: 40px;
-    margin-top: auto;
-    margin-bottom: auto;
+/* Title Typing Animation */
+.home-intro-title {
+    font-size: 2.5vw;
+    height: 6vh;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    color: white;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    animation: blink-caret 0.75s step-end infinite;
+}
 
+/* Blink animation for the caret */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
 
+/* Intro Text Container */
+.home-text-container {
+    text-align: center;
+    margin-top: 5vh;
+    width: 60vw;
+}
+
+.home-about-text, .home-now-text, .home-more-text {
+    font-size: 1.5vw;
+    margin-top: 5vh;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.home-now-text-title, .home-more-text-title {
+    color: white;
+    font-size: 2.5vw;
+    margin-top: 10vh;
+    margin-bottom: 1vh;
+}
+
+/* Skills Section Styling */
+.home-skills-section {
+    text-align: center;
+    margin-top: 10vh;
+    width: 60vw;
+}
+
+.home-skills-title {
+    font-size: 2.5vw;
+    color: #00bcd4; /* Light blue accent for titles */
+    margin-bottom: 3vh;
+}
+
+.home-skills-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.85); /* Light white text */
+}
+
+.home-skills-list li {
+    margin-bottom: 2vh;
+}
+
+/* Projects Section Styling */
+.home-projects-section {
+    text-align: center;
+    margin-top: 10vh;
+    width: 60vw;
+}
+
+.home-projects-title {
+    font-size: 2.5vw;
+    color: #00bcd4;
+    margin-bottom: 3vh;
+}
+
+.home-project {
+    margin-bottom: 5vh;
+}
+
+.home-project h3 {
+    font-size: 2vw;
+    color: white;
+    margin-bottom: 1vh;
+}
+
+.home-project p {
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+    margin-bottom: 2vh;
+}
+
+/* Footer section */
+.footer-container {
+    text-align: center;
+    margin-top: 10vh; 
+}
+
+.footer-text {
+    font-size: 1.2vw;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .home-taiki-image {
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .home-intro-title {
+        font-size: 4vw;
+    }
+
+    .home-about-text, .home-now-text, .home-more-text {
+        font-size: 2.5vw;
+    }
+
+    .home-skills-title, .home-projects-title {
+        font-size: 3vw;
+    }
+
+    .home-skills-list li, .home-project p {
+        font-size: 2vw;
+    }
+
+    .home-project h3 {
+        font-size: 2.5vw;
+    }
 }
